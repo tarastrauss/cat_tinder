@@ -6,14 +6,14 @@
   </div>
 </nav>
 
-  <h4 class = "center-block"> You can either choose a
-  <%= link_to 'random cat', cat_path(@random_cat) %>
-  or click one from the list! <h4>
+<h4 class = "center-block"> You can either choose a
+<%= link_to 'random cat', cat_path(@random_cat) %>
+or click one from the list! <h4>
 
 
-  <% @cat.each do |c| %>
-      <img src = <%= c.image_uri %> class="img-responsive center-block"  >
-      <h4 class = "center-block"> <%= link_to c.name, cat_path(c) %> </h4>
-      <h5 class = "center-block"> <%= c.votes%> Votes </h5>
-  <% end %>
+<% @cat.each do |c| %>
+    <img src = <%= c.image_uri %> class="img-responsive center-block"  >
+    <h4 class = "center-block"> <%= link_to c.name, cat_path(c) %> </h4>
+    <h5 class = "center-block"> <%= c.votes%> Votes </h5>
+<% end %>
 
